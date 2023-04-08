@@ -10,6 +10,7 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
 button {
     cursor: pointer;
 }
@@ -23,9 +24,11 @@ header {
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
 
 }
+
 header nav {
     position: relative;
 }
@@ -49,10 +52,12 @@ header a {
     color: #938C8C;
 
 }
+
 header .jobs {
     position: relative;
 }
-/* 
+
+
 header nav .jobs::after {
     top: 4px;
     content: "";
@@ -60,7 +65,7 @@ header nav .jobs::after {
     border: 9px solid;
     border-color: transparent transparent black transparent;
     right: -16px;
-} */
+} 
 
 
 
@@ -70,38 +75,30 @@ header .register a {
     margin-right: 20px;
 
 }
-nav .container-search {
-position: relative;
-width: 500px;
-display: none;
-/* background-color: antiquewhite; */
-}
+
 nav div:not(:last-child) {
     display: inline-block;
     margin-right: 10px;
 }
 
 nav .search {
-    /* display: none; */
-    /* margin-top: 4px; */
-    /* margin-left: 20px; */
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    /* padding: 12px 40px; */
     flex-wrap: wrap;
     width: 100%;
-    /* width: 100%; */
     height: 50px;
     background-color: black;
+    color: white;
     position: absolute;
     border-radius: 10px;
-    top: 3px;
-    right: 36px;
-    /* z-index: 1; */
-    
+    top: 26px;
+    right: 0px;
+    z-index: 1;
+
 }
+
 /* nav:hover .container-search {
     display: block;
     z-index: 1;
@@ -111,10 +108,12 @@ nav .search {
 .search a {
     color: white;
 }
+
 .project-body {
     background-image: url(./image/background.jpg);
     background-size: cover;
 }
+
 .project-body .find-job {
     padding-top: 30px;
     display: flex;
@@ -124,14 +123,15 @@ nav .search {
     text-align: center;
     height: 150px;
     margin-bottom: 20px;
-    
+
 }
+
 .project-body .find-job button {
     width: 160px;
     padding: 4px 32px 4px 32px;
     background-color: black;
-    color: white; 
-    border-radius: 7px; 
+    color: white;
+    border-radius: 7px;
 }
 
 .project-body .search-job input {
@@ -148,26 +148,30 @@ nav .search {
     position: relative;
     width: 100%;
 }
+
 .project-body .search-job .image {
     position: absolute;
     top: 0;
     left: calc(70% - 40px);
 }
+
 .project-body .links {
-    
-    
+
+
     text-align: center;
     margin: 20px 0;
 }
-.project-body .links a:first-child{
+
+.project-body .links a:first-child {
     position: relative;
 }
+
 .project-body .links a:first-child::after {
     content: "";
     position: absolute;
-    top:3px;
+    top: 3px;
     left: 0;
-    
+
     height: 15px;
     width: 50%;
     border-bottom: 2px solid orange;
@@ -177,71 +181,85 @@ nav .search {
     margin-right: 10px;
     color: gray;
 }
+
 .cards .translator {
-   padding: 25px;
-   border-radius: 10px;
+    padding: 25px;
+    border-radius: 10px;
     background-color: white;
     width: 300px;
-    
-    
+
+
 }
+
 .cards {
-   display: flex;
-   justify-content: space-evenly;
-   flex-wrap: wrap;
-  
-   gap:20px;
-   padding-bottom: 70px;
-   
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    gap: 20px;
+    padding-bottom: 70px;
+
 }
+
 .cards .header-cards {
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
-    gap:20px;
-    
+    gap: 20px;
+
 }
+
 .cards .translator {
     width: 380px;
 }
+
 .cards .translator h4 {
-    margin :20px 0 ;
+    margin: 20px 0;
 }
+
 .cards .card-body p {
     margin-bottom: 10px;
 }
+
 .cards .translator header p:first-of-type {
     font-weight: 500;
     font-size: 15px;
-   
-    
+
+
 }
+
 .cards .translator header p:nth-child(3) {
     font-weight: 100;
     font-size: 10px;
 }
-.cards .card-body p span , .cards .card-footer span {
+
+.cards .card-body p span,
+.cards .card-footer span {
     font-weight: 400;
     font-size: 12px;
     color: #938C8C;
 
 }
+
 .cards .card-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.cards .card-footer ul  {
+
+.cards .card-footer ul {
     list-style-type: disc;
-    
+
 
 }
- .cards .card-footer ul li::marker {
+
+.cards .card-footer ul li::marker {
     color: green;
     font-size: 15px;
-    
- }
- .cards .translator button {
+
+}
+
+.cards .translator button {
     width: 85%;
     height: 40px;
     margin-left: 10px;
@@ -250,14 +268,15 @@ nav .search {
     color: white;
     font-size: 16px;
     border-radius: 5px;
- }
- 
+}
+
 
 
 footer {
     background-color: black;
     padding: 20px 0;
 }
+
 footer .footer-son1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -266,28 +285,36 @@ footer .footer-son1 {
     /* height: 100px; */
     gap: 20px;
 }
-footer .footer-son1 > div {
+
+footer .footer-son1>div {
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
 }
+
 footer .footer-son2 {
     color: white;
     margin-left: 65px;
 }
+
 footer .footer-son2 p {
     display: inline-block;
 }
+
 footer .footer-son2 hr {
-       color: white;
-       display: inline-block;
-       width: 50%;
-       margin-left: 20px;
+    color: white;
+    display: inline-block;
+    width: 50%;
+    margin-left: 20px;
 }
+
 footer a {
     text-decoration: none;
     color: white;
+}
+.hide {
+    display: none;
 }
